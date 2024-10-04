@@ -1,0 +1,145 @@
+﻿StateCode,BusinessType,NumberofJobs
+NSW,Agriculture,85811
+NSW,Mining,35751
+NSW,Manufacturing,282964
+NSW,Electricity,39048
+NSW,Construction,367415
+NSW,Wholesale,234713
+NSW,Retail,517141
+NSW,Accomodation,502005
+NSW,Transport,193298
+NSW,Information,102715
+NSW,Financial,298296
+NSW,Real Estate,107707
+NSW,Scientific Services,470627
+NSW,Administrative,523465
+NSW,Safety,332464
+NSW,Education,455420
+NSW,Health,542631
+NSW,Arts,87568
+VIC,Agriculture,74197
+VIC,Mining,12830
+VIC,Manufacturing,285202
+VIC,Electricity,37610
+VIC,Construction,272975
+VIC,Wholesale,196356
+VIC,Retail,448918
+VIC,Accomodation,384111
+VIC,Transport,150075
+VIC,Information,78783
+VIC,Financial,216880
+VIC,Real Estate,80498
+VIC,Scientific Services,363236
+VIC,Administrative,475338
+VIC,Safety,235427
+VIC,Education,389081
+VIC,Health,573760
+VIC,Arts,98958
+QLD,Agriculture,87012
+QLD,Mining,60034
+QLD,Manufacturing,204310
+QLD,Electricity,30607
+QLD,Construction,258576
+QLD,Wholesale,130862
+QLD,Retail,339341
+QLD,Accomodation,311457
+QLD,Transport,134761
+QLD,Information,32190
+QLD,Financial,130620
+QLD,Real Estate,79810
+QLD,Scientific Services,235566
+QLD,Administrative,343980
+QLD,Safety,204330
+QLD,Education,299824
+QLD,Health,460595
+QLD,Arts,60486
+SA,Agriculture,35934
+SA,Mining,11905
+SA,Manufacturing,79390
+SA,Electricity,8043
+SA,Construction,63512
+SA,Wholesale,41024
+SA,Retail,117028
+SA,Accomodation,87634
+SA,Transport,38292
+SA,Information,12825
+SA,Financial,41386
+SA,Real Estate,18288
+SA,Scientific Services,66849
+SA,Administrative,104498
+SA,Safety,74713
+SA,Education,105009
+SA,Health,166875
+SA,Arts,17625
+WA,Agriculture,44788
+WA,Mining,108272
+WA,Manufacturing,101658
+WA,Electricity,16011
+WA,Construction,143370
+WA,Wholesale,65694
+WA,Retail,174112
+WA,Accomodation,155885
+WA,Transport,68473
+WA,Information,13569
+WA,Financial,56201
+WA,Real Estate,38960
+WA,Scientific Services,134856
+WA,Administrative,186746
+WA,Safety,97759
+WA,Education,144282
+WA,Health,240555
+WA,Arts,37510
+TAS,Agriculture,25303
+TAS,Mining,3530
+TAS,Manufacturing,23397
+TAS,Electricity,3708
+TAS,Construction,20596
+TAS,Wholesale,10241
+TAS,Retail,35025
+TAS,Accomodation,32219
+TAS,Transport,12622
+TAS,Information,3295
+TAS,Financial,11576
+TAS,Real Estate,5230
+TAS,Scientific Services,16339
+TAS,Administrative,24943
+TAS,Safety,23436
+TAS,Education,34715
+TAS,Health,52464
+TAS,Arts,6699
+NT,Agriculture,4192
+NT,Mining,3406
+NT,Manufacturing,4631
+NT,Electricity,1893
+NT,Construction,14195
+NT,Wholesale,4460
+NT,Retail,15456
+NT,Accomodation,17595
+NT,Transport,6529
+NT,Information,1046
+NT,Financial,2810
+NT,Real Estate,3152
+NT,Scientific Services,8815
+NT,Administrative,14191
+NT,Safety,24359
+NT,Education,16959
+NT,Health,27493
+NT,Arts,4759
+ACT,Agriculture,840
+ACT,Mining,234
+ACT,Manufacturing,5938
+ACT,Electricity,1681
+ACT,Construction,16612
+ACT,Wholesale,4329
+ACT,Retail,26521
+ACT,Accomodation,32416
+ACT,Transport,4430
+ACT,Information,5161
+ACT,Financial,6941
+ACT,Real Estate,5072
+ACT,Scientific Services,34877
+ACT,Administrative,32281
+ACT,Safety,101978
+ACT,Education,22651
+ACT,Health,30419
+ACT,Arts,6970
