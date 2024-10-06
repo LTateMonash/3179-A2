@@ -1,1 +1,29 @@
-
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/IndustryBusinesses.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "StateCode", 
+      "type": "nominal",
+      "axis": {"title": "State"}
+    },
+    "y": {
+      "field": "NumberofJobs", 
+      "type": "quantitative",
+      "axis": {"title": "Number of Jobs"}
+    },
+    "color": {
+      "field": "BusinessType", 
+      "type": "nominal",
+      "legend": {"title": "Industry"}
+    },
+    "tooltip": [
+      {"field": "StateCode", "type": "nominal", "title": "State"},
+      {"field": "BusinessType", "type": "nominal", "title": "Industry"},
+      {"field": "Jobs", "type": "quantitative", "title": "Number of Jobs"}
+    ]
+  }
+}
