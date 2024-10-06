@@ -1,1 +1,39 @@
-
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/ProtLvsMortvsPop.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "ProtectedLand",
+      "type": "quantitative",
+      "axis": {"title": "Protected Land (%)"}
+    },
+    "y": {
+      "field": "TotalBuildingValue",
+      "type": "quantitative",
+      "axis": {"title": "Total Building Value (millions)"}
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "legend": {"title": "Population"},
+      "scale": {"range": [100, 3000]}
+    },
+    "color": {
+      "field": "StateCode",
+      "type": "nominal",
+      "legend": {"title": "State"}
+    },
+    "tooltip": [
+      {"field": "StateCode", "type": "nominal", "title": "State"},
+      {"field": "Population", "type": "quantitative", "title": "Population"},
+      {"field": "ProtectedLand", "type": "quantitative", "title": "Protected Land (%)"},
+      {"field": "TotalBuildingValue", "type": "quantitative", "title": "Total Building Value (millions)"}
+    ]
+  }
+}
