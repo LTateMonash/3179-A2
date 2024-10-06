@@ -1,1 +1,32 @@
-
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart for median income by year and state.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/MedianIncome.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "MedianIncome",
+      "type": "quantitative",
+      "axis": {
+        "title": "Median Income"
+      }
+    },
+    "color": {
+      "field": "StateCode",
+      "type": "nominal",
+      "title": "State"
+    }
+  }
+}
