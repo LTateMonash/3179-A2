@@ -1,1 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Median House Prices by State in Australia (2023)",
+  "width": "container",
+  "height": 400,
+  "projection": {
+    "type": "mercator"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/aus-topo.json",
+    "format": {
+      "type": "topojson",
+      "feature": "STE_2021_AUST_GDA94"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "properties.STE_NAME21",
+        "oneOf": [
+          "Australian Capital Territory",
+          "New South Wales",
+          "Queensland",
+          "Victoria",
+          "South Australia",
+          "Western Australia",
+          "Tasmania",
+          "Northern Territory"
+        ]
+      }
+    },
+    {
+      "lookup": "properties.STE_NAME21",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/MedianHousePrice.csv",
+          "format": {
+            "type": "csv"
+          }
+        },
+        "key": "State",
+        "fields": ["MedianHousePrice", ]
+      },
+      "default": "No Data"
+    }
+  ],
+  "mark": {
+    "type": "geoshape"
+  },
+  "encoding": {
+    "color": {
+      "field": "MedianHousePrice",
+      "type": "quantitative",
+      "title": "Median House Price",
+      "scale": {
+        "type": "threshold",
+        "domain": [500000, 550000, 600000, 650000, 700000, 750000, 800000, 900000, 1000000],
+        "range": [
+          "#f7fbff",
+          "#deebf7",
+          "#c6dbef",
+          "#9ecae1",
+          "#6baed6",
+          "#4292c6",
+          "#2171b5",
+          "#08519c",
+          "#08306b"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.STE_NAME21",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "MedianHousePrice",
+        "type": "quantitative",
+        "title": "Median House Price",
+        "format": ","
+      }
+    ]
+  }
+}
 
