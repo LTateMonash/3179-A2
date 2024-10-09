@@ -39,7 +39,7 @@
           }
         },
         "key": "State",
-        "fields": ["MedianHousePrice", ]
+        "fields": ["MedianHousePrice"]
       },
       "default": "No Data"
     }
