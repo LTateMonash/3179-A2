@@ -16,13 +16,6 @@ body {
     margin: 20px 0;
 }
 
-.left {
-    flex-direction: row;
-}
-
-.right {
-    flex-direction: row-reverse; /* Reverse the order of elements */
-}
 
 .graph {
     flex: 1;
