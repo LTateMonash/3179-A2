@@ -16,18 +16,20 @@ body {
     margin: 20px 0;
 }
 
+.page { 
+    width: 750px;
+    background-colour: white;
+    margin: auto;
+    padding: 60px;
+    padding-top: 40px;
+}
 
 .graph {
-    flex: 1;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
     background-color: #e0e0e0;
-    border-radius: 8px;
-    margin: 10px;
 }
 
 .text-box {
-    flex: 1;
     margin: 10px;
     padding: 20px;
     background-color: white;
