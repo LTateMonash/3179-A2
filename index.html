@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Australian States</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content left">
+            <div class="graph" id="chart1"></div>
+            <div class="text-box">
+                <h2>Population</h2>
+                <p>Include details later :)</p>
+            </div>
+        </div>
+        <div class="content right">
+            <div class="text-box">
+                <h2>Housing Prices</h2>
+                <p>Include details later :)</p>
+            </div>
+            <div class="graph" id="chart2"></div>
+        </div>
+        <div class="content left">
+            <div class="graph" id="chart3"></div>
+            <div class="text-box">
+                <h2>Land Value and Protected Landr</h2>
+                <p>Include details later :)</p>
+            </div>
+        </div>
+        <div class="content right">
+            <div class="text-box">
+                <h2>Median Income</h2>
+                <p>Include details later :)</p>
+            </div>
+            <div class="graph" id="chart4"></div>
+        </div>
+        <div class="content left">
+            <div class="graph" id="chart5"></div>
+            <div class="text-box">
+                <h2>Industry</h2>
+                <p>Include details later :)</p>
+            </div>
+        </div>
+    </div>
+
+   <script type="text/javascript">
+  var specVis1 = "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/population.json";
+  var specVis2 = "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/housepriceState.json";
+  var specVis3 = "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/LandvsValuevsPop.json";
+  var specVis4 = "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/incomeLine.json";
+  var specVis5 = "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/industrybusinesses.json";
+
+  vegaEmbed('#chart1', specVis1, { "actions": false })
+    .then(result => console.log('Visualization 1 embedded successfully'))
+    .catch(console.error);
+
+  vegaEmbed('#chart2', specVis2, { "actions": false })
+    .then(result => console.log('Visualization 2 embedded successfully'))
+    .catch(console.error);
+
+  vegaEmbed('#chart3', specVis3, { "actions": false })
+    .then(result => console.log('Visualization 3 embedded successfully'))
+    .catch(console.error);
+
+  vegaEmbed('#chart4', specVis4, { "actions": false })
+    .then(result => console.log('Visualization 4 embedded successfully'))
+    .catch(console.error);
+
+  vegaEmbed('#chart5', specVis5, { "actions": false })
+    .then(result => console.log('Visualization 5 embedded successfully'))
+    .catch(console.error);
+</script>
+
+</body>
+</html>
