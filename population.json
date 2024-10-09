@@ -1,1 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Populations by State in Australia (2023)",
+  "width": "container",
+  "height": 400,
+  "projection": {
+    "type": "mercator"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/aus-topo.json",
+    "format": {
+      "type": "topojson",
+      "feature": "STE_2021_AUST_GDA94"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "properties.STE_NAME21",
+        "oneOf": [
+          "Australian Capital Territory",
+          "New South Wales",
+          "Queensland",
+          "Victoria",
+          "South Australia",
+          "Western Australia",
+          "Tasmania",
+          "Northern Territory"
+        ]
+      }
+    },
+    {
+      "lookup": "properties.STE_NAME21",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/Population.csv",
+          "format": {
+            "type": "csv"
+          }
+        },
+        "key": "State",
+        "fields": ["Population"]
+      },
+      "default": "No Data"
+    }
+  ],
+  "mark": {
+    "type": "geoshape"
+  },
+  "encoding": {
+    "color": {
+      "field": "Population",
+      "type": "quantitative",
+      "title": "Population",
+      "scale": {
+        "type": "threshold",
+        "domain": [1000000,2000000,3000000,4000000,5000000,6000000,7000000,8000000],
+        "range": ["#e0f2f1", "#c8e6c9", "#a5d6a7", "#81c784", "#66bb6a", "#4caf50", "#388e3c", "#2e7d32"]
+
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.STE_NAME21",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "Population",
+        "type": "quantitative",
+        "title": "Population",
+        "format": ","
+      }
+    ]
+  }
+}
 
