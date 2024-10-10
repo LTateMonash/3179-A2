@@ -25,7 +25,7 @@
     "tooltip": [
       {"field": "StateCode", "type": "nominal", "title": "State"},
       {"field": "BusinessType", "type": "nominal", "title": "Industry"},
-      {"field": "NumberofJobs", "type": "quantitative", "title": "Number of Jobs"}
+      {"field": "NumberofJobs", "type": "quantitative", "title": "Number of Jobs", "format": ","}
     ]
   }
 }
