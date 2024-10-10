@@ -5,12 +5,6 @@
   "data": {
     "url": "https://raw.githubusercontent.com/LTateMonash/3179-A2/main/IndustryBusinesses.csv"
   },
-   "transform": [
-    {
-      "calculate": "to_number(datum.NumberofJobs)",
-      "as": "NumberofJobs"
-    }
-  ],
   "mark": "bar",
   "encoding": {
     "x": {
